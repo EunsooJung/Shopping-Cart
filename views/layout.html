@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - Materials E-Shop</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/bmes.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-static-top layout__nav-wrapper">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="layout__nav-brand-wrapper">
+          <a href="/" class="layout__nav-brand">Materials e-shop</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse navbar-right layout__cart-wrapper">
+        <ul class="navbar-nav">
+          <li>{% include 'cart_summary_widget.html' %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container body-content layout__content-wrapper">
+    {% block content %}{% endblock %}
+    <hr />
+    <footer>
+      <p class="layout__copyright">&copy; {{ year }} - Material e-shop by Michael</p>
+    </footer>
+  </div>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

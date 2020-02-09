@@ -1,0 +1,20 @@
+.index__filter-wrapper {
+  padding-top: 70px;
+  padding-bottom: 250px;
+}
+
+.index__filter-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(36, 83, 175);
+}
+
+.index__product-wrapper--has-pages {
+  padding-top: 0px;
+}
+
+.index__product-wrapper--no-pages {
+  padding-top: 79px;
+}
+
+/*# sourceMappingURL=catalogue.css.map */

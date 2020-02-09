@@ -1,0 +1,66 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<div className="container cart_detail">
+  <div className="row no-gutters display-flex cart_detail__row">
+    <div className="col-md-9 cart_detail__cart-panel">
+      <div className="cart_detail__cart-panel-header">
+        <div className="cart_detail__cart-panel-title ">
+          <p>Your Cart</p>
+        </div>
+        <div>
+          <a href="/" className="cart_detail__continue-shopping-button">Continue Shopping</a>
+        </div>
+      </div>
+      <div>
+        <table className="table table-bordered table-striped">
+          <thead className="cart_detail__table-head">
+            <tr>
+              <th className="cart_detail__table-head-item">Item</th>
+              <th></th>
+              <th className="text-center cart_detail__table-head-item">Price</th>
+              <th className="text-center cart_detail__table-head-item">Quantity</th>
+              <th className="text-center cart_detail__table-head-item">Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in cartItems %}
+            <tr className="cart_detail__table-body-item-wrapper">
+              <td className="text-center">
+                <img src="/images/productimages/main/{{item.Product.imageUrl}}" className="cart_detail__image" />
+              </td>
+              <td className="text-left cart_detail__table-body-item-name">{{item.Product.name}}</td>
+              <td className="text-center cart_detail__table-body-item-price">${{item.Product.price}}</td>
+              <td className="text-center cart_detail__table-body-item-quantity">{{item.quantity}}</td>
+              <td className="text-center cart_detail__table-body-item-total">${{ item.Product.price * item.quantity}}
+              </td>
+              <td className="text-center">
+                <form method="post">
+                  <input type="hidden" name="cartItemId" value="{{item.id}}" />
+                  <button type="submit" className="cart_detail__table-remove-button">X</button>
+                </form>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div className="col-md-3 cart_detail__summary-panel">
+      <div className="cart_detail__summary-panel-title-wrapper">
+        <p className="cart_detail__summary-panel-title">Cart Summary</p>
+      </div>
+      <div className="cart_detail__summary-panel-total">
+        <span className="cart_detail__summary-panel-total-title">Items({{cartItemCount}})</span>
+        <span>${{ cartTotal }}</span>
+      </div>
+      <div className="cart_detail__summary-panel-ads">
+        <p className="cart_detail__summary-panel-ads-lable">Free 3-Day Shipping!</p>
+      </div>
+      <div style="margin-top: 25px;">
+        <a href="checkout" className="cart_detail__summary-panel-checkout-button">PROCEED TO CHECKOUT</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

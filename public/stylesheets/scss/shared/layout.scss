@@ -1,0 +1,36 @@
+﻿.layout {
+    &__nav-wrapper {
+        height: 80px;
+        color: purple;
+        padding-top: 15px;
+    }
+
+    &__nav-brand-wrapper {
+        padding-top: 12px;
+    }
+
+    &__nav-brand {
+        color: purple;
+        font-size: 20px;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: none;
+            color: purple;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    &__cart-wrapper {
+        padding-top: 16px;
+    }
+
+    &__content-wrapper {
+        margin-top: 80px;
+    }
+
+    &__copyright {
+        color: purple;
+    }
+}

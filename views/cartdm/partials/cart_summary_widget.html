@@ -1,0 +1,12 @@
+﻿<div>
+  {% if cartItemCount > 0 %}
+  <small class="cart_summary_widget__wrapper">
+    <b>My Cart:</b>
+    <span class="cart_summary_widget__item-count">{{cartItemCount}} item(s)</span>
+    <span class="cart_summary_widget__cart-total">${{ cartTotal }}</span>
+  </small>
+  {% endif %}
+  <a href="cart">
+    <i class="glyphicon glyphicon-shopping-cart cart_summary_widget__cart-icon"></i>
+  </a>
+</div>

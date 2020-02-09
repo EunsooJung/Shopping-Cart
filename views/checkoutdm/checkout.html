@@ -1,0 +1,54 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<div class="checkout">
+  <div class="panel panel-default checkout__panel">
+    <div class="panel-heading checkout__header">
+      <h1 class="panel-title checkout__panel-title">
+        <span>Submit Your Order</span>
+      </h1>
+    </div>
+    <form method="POST" action="/checkout" style="padding-bottom: 0px;">
+
+      <div class="panel-body checkout__panel-body">
+        <div class="form-group">
+          {{form.fields.firstName.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.middleName.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.lastName.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.email.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.addressLine1.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.addressLine2.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.city.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.state.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.country.toHTML()|safe}}
+        </div>
+        <div class="form-group">
+          {{form.fields.zipCode.toHTML()|safe}}
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="checkout__flex-container">
+          <a class="btn btn-sm checkout__button" href="cart">Cancel </a>
+          <button class="btn btn-sm checkout__button" type="submit">Submit Order</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

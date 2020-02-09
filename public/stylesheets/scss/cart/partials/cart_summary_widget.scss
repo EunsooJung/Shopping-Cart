@@ -1,0 +1,25 @@
+﻿.cart_summary_widget {
+    &__wrapper {
+        color: purple;
+        margin-top: -10px;
+        font-size: 14px;
+    }
+
+    &__item-count {
+        font-size: 14px;
+        font-weight: 600;
+        color: #65737e
+    }
+
+    &__cart-total {
+        font-size: 16px;
+        font-weight: 600;
+        color: #41533b
+    }
+
+    &__cart-icon {
+        color: purple;
+        font-size: 25px;
+        margin-top: -10px;
+    }
+}

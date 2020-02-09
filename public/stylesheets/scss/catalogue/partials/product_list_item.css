@@ -1,0 +1,26 @@
+.product-list-item {
+  height: 370px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid purple;
+  margin-bottom: 15px; }
+  .product-list-item__image-wrapper {
+    margin-bottom: 10px; }
+  .product-list-item__image {
+    height: 220px;
+    width: 200px; }
+  .product-list-item__product-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: purple; }
+  .product-list-item__product-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: purple; }
+  .product-list-item__button {
+    background-color: purple;
+    color: white;
+    padding: 8px 10px;
+    border: none; }
+
+/*# sourceMappingURL=product_list_item.css.map */

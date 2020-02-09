@@ -1,0 +1,90 @@
+.brand__heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: purple; }
+.brand__list-wrapper {
+  padding-top: 8px;
+  padding-left: 5px; }
+.brand__selected {
+  color: gray;
+  text-decoration-line: underline; }
+  .brand__selected:hover {
+    color: gray;
+    text-decoration-line: underline; }
+.brand__not-selected {
+  color: darkmagenta; }
+  .brand__not-selected:hover {
+    color: darkmagenta;
+    text-decoration-line: underline; }
+
+.index__filter-wrapper {
+  padding-top: 70px;
+  padding-bottom: 250px; }
+.index__filter-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: purple; }
+.index__product-wrapper--has-pages {
+  padding-top: 0px; }
+.index__product-wrapper--no-pages {
+  padding-top: 79px; }
+
+.category__heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: purple; }
+.category__list-wrapper {
+  padding-top: 8px;
+  padding-left: 5px; }
+.category__selected {
+  color: gray;
+  text-decoration-line: underline; }
+  .category__selected:hover {
+    color: gray;
+    text-decoration-line: underline; }
+.category__not-selected {
+  color: darkmagenta; }
+  .category__not-selected:hover {
+    color: darkmagenta;
+    text-decoration-line: underline; }
+
+.product-list__upper-horizontal-line {
+  padding: 0px;
+  margin: 0px; }
+.product-list__empty-notifier {
+  color: purple;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px; }
+.product-list__lower-horizontal-line {
+  padding-bottom: -18px;
+  margin-bottom: -18px; }
+
+.product-list-item {
+  height: 370px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid purple;
+  margin-bottom: 15px; }
+  .product-list-item__image-wrapper {
+    margin-bottom: 10px; }
+  .product-list-item__image {
+    height: 220px;
+    width: 200px; }
+  .product-list-item__product-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: purple; }
+  .product-list-item__product-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: purple; }
+  .product-list-item__button {
+    background-color: purple;
+    color: white;
+    padding: 8px 10px;
+    border: none; }
+
+/*# sourceMappingURL=cataloguedm.css.map */

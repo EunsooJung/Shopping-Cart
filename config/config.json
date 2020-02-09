@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "./shopping-cart.db"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "./shopping-cart.db"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "./shopping-cart.db"
+  }
+}

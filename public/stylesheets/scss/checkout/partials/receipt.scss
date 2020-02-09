@@ -1,0 +1,32 @@
+﻿.receipt {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 50px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 600;
+
+    &__button-wrapper {
+        margin-top: 45px;
+    }
+
+    &__button {
+        color: purple;
+        padding: 12px;
+        border: 1px solid purple;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+
+        &:hover {
+            color: purple;
+            padding: 12px;
+            border: 1px solid purple;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            background-color: lighten(purple,72%)
+        }
+    }
+}

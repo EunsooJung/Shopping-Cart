@@ -1,0 +1,31 @@
+.brand__heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.brand__list-wrapper {
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.brand__selected {
+  color: gray;
+  text-decoration-line: underline;
+}
+
+.brand__selected:hover {
+  color: gray;
+  text-decoration-line: underline;
+}
+
+.brand__not-selected {
+  color: darkmagenta;
+}
+
+.brand__not-selected:hover {
+  color: darkmagenta;
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=brand.css.map */

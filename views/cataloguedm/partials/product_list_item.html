@@ -1,0 +1,18 @@
+﻿<div class="product-list-item">
+  <div class="product-list-item__image-wrapper">
+    <img src="/images/productimages/main/{{product.imageUrl}}" class="product-list-item__image" />
+  </div>
+  <div>
+    <p class="product-list-item__product-name">{{product.name}}</p>
+  </div>
+  <div>
+    <p class="product-list-item__product-price">${{product.price}}</p>
+  </div>
+  <div>
+    <form method="post" action="/">
+      <input type="hidden" name="productId" value="{{product.id}}" />
+      <input type="hidden" name="originalUrl" value="{{originalUrl}}" />
+      <button type="submit" name="submit" class="product-list-item__button">Add to Cart</button>
+    </form>
+  </div>
+</div>

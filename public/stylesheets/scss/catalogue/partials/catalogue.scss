@@ -1,0 +1,21 @@
+﻿.index {
+
+    &__filter-wrapper {
+        padding-top: 70px;
+        padding-bottom: 250px;
+    }
+
+    &__filter-title {
+        font-size: 18px;
+        font-weight: 400;
+        color: purple;
+    }
+
+    &__product-wrapper--has-pages {
+        padding-top: 0px;
+    }
+
+    &__product-wrapper--no-pages {
+        padding-top: 79px;
+    }
+}

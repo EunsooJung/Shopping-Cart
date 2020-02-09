@@ -1,0 +1,24 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 index__filter-wrapper">
+      <h4 class="index__filter-title">Filter By</h4>
+      <hr />
+      <div>
+        {% include 'partials/category.html' %}
+      </div>
+      <div>
+        {% include 'partials/brand.html' %}
+      </div>
+    </div>
+    <div class="col-md-9 {% if page_object %}index__product-wrapper--has-pages{%else%}index__product-wrapper--no-pages{% endif%}">
+      {% include 'partials/product_list.html' %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

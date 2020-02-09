@@ -1,0 +1,76 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*Pagination Color*/
+.custom-pagination .pagination>li>a,
+.custom-pagination .pagination>li>span {
+    border: 1px solid rgb(36, 83, 175);
+    color: rgb(36, 83, 175);
+    ;
+}
+
+.pagination>li.active>span {
+    background-color: rgb(36, 83, 175);
+    ;
+    color: #fff;
+}
+
+.pagination>li.active>span:hover {
+    background-color: rgb(36, 83, 175);
+    ;
+    border: 1px solid rgb(36, 83, 175);
+    ;
+    color: white;
+}
+
+/*Equal Heights*/
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.display-flex>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}

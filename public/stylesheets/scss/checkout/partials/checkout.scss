@@ -1,0 +1,63 @@
+﻿.checkout {
+    padding: 80px 120px 120px 120px;
+
+    .checkout-editor__panel {
+        border-radius: 0px;
+    }
+
+    &__header {
+        padding: 25px 15px 25px 15px;
+    }
+
+    &__panel-title {
+        font-weight: 600;
+        font-size: 18px;
+        color: purple;
+        text-align: center;
+    }
+
+    &__panel-body {
+        padding: 40px 50px 20px 50px;
+    }
+
+    &__input-label {
+        font-weight: 500;
+        font-size: 16px;
+        color: purple;
+    }
+
+    &__subject-input {
+        border-radius: 0px;
+        height: 40px;
+    }
+
+    &__detail-input {
+        border-radius: 0px;
+    }
+
+    &__flex-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 10px 12px 10px;
+    }
+
+    &__button {
+        border-radius: 0px;
+        padding: 5px 25px 5px 25px;
+        background-color: purple;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__button:hover {
+        border-radius: 0px;
+        padding: 5px 25px 5px 25px;
+        background-color: purple;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-color: azure;
+    }
+}
