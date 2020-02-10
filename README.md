@@ -99,7 +99,7 @@ var getPagedProducts = function(req, res) {
    - Setup Shopping Cart web applicaion's environments (npm package dependencies)
    - Import Register the Routers to access.
 
-5. forms: It provides forms to checkout page
+5. forms: It provides forms to checkout page.
 
 6. migrations: It provides Database schema migration.
 
@@ -147,6 +147,8 @@ routerRegister(app);
   - Node.js pagination middleware and view helpers.
 - [sqlite3](https://sqlite.org/index.html)
   - SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+- [forms](https://www.npmjs.com/package/forms)
+  - This module is an attempt to provide the same sort of helpers for node.js.
 
 ## Authors
 
