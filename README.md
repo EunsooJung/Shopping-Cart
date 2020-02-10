@@ -20,7 +20,7 @@ node server.js or npm start (using nodemon)
 
 ## Preview
 
-[![Fitness-Tracker](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Materials%20E-Shop-Demo.gif)](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Materials%20E-Shop-Demo.gif)
+[![Shopping Cart](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Materials%20E-Shop-Demo.gif)](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Materials%20E-Shop-Demo.gif)
 
 ## Usage
 
@@ -47,11 +47,11 @@ To start:
 
 - Project structure
 
-  [![Shopping Cart-Project-Structure](https://github.com/EunsooJung/Fitness-Tracker/blob/master/public/images/Project-Structure.png)]
+  [![Shopping Cart-Project-Structure](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Shopping-Cart-ProjectStructure.png)]
 
 - Database ERD
 
-  [![Shopping Cart-ERD](https://github.com/EunsooJung/Fitness-Tracker/blob/master/public/images/Project-Structure.png)]
+  [![Shopping Cart-ERD](https://github.com/EunsooJung/Shopping-Cart/blob/master/public/images/Shopping-Cart-ERD.png)]
 
 - Source Code Check point
 
@@ -95,8 +95,17 @@ var getPagedProducts = function(req, res) {
 ```
 
 4. app.js:
+
    - Setup Shopping Cart web applicaion's environments (npm package dependencies)
    - Import Register the Routers to access.
+
+5. forms: It provides forms to checkout page
+
+6. migrations: It provides Database schema migration.
+
+7. views: View layer to represent user interface.
+
+8. services: It provides services to controller.
 
 ```javascript
 // View Engine SetUp
